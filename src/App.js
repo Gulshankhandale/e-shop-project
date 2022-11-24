@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
+import TopHeader from './Components/TopHeader';
+import OfferSlider from './Components/OfferSlider';
+import ProductCategory from './Components/ProductCategory';
+import PosterSection from './Components/PosterSection';
+import OurProducts from './Components/OurProducts';
+import NewArrivals from './Components/NewArrivals';
+import ServiceSection from './Components/ServiceSection';
+import Footer from './Components/Footer';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+  <BrowserRouter>
+  <TopHeader/>
+  <OfferSlider/>
+  <ProductCategory/>
+  <PosterSection/>
+  <OurProducts/>
+  <NewArrivals/>
+  <ServiceSection/>
+  <Footer/>
+  
+  <Routes>
+
+  </Routes>
+  </BrowserRouter>
+  </>
 }
 
 export default App;

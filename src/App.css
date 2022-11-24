@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.shop-logo{
+  height: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cart-icon{
+  height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.wishlist-icon{
+  height: 30px;
+}
+
+.wishlist-btn{
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+.account-section{
+  margin-left: 15px;
+}
+
+.cart-btn{
+  background-color: transparent;
+  border: none;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.section-title-wrapper{
+  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.poster-image{
+  width: 90%;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+  .swiper{
+    width: 1000px;
+    height: 100%;
+  }
+
+  .section-title-wrapper{
+    margin-left: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-img{
+  height: 64px;
+  width: 64px;
+}
+
+
+.title-highlighter.highlighter-secondary{
+  color: #ff497c;
+}
+
+.title-highlighter-product{
+  color: #8c71db;
+}
+
+.product-card{
+  --bs-card-border-width: 0px !important;
+}
+
+.service-box.service-style-2{
+    display: flex;
+    border: none;
+    padding: 0;
+    text-align: left;
+    background-color: rgba(0,0,0,0);
+}
+
+.title{
+  margin-bottom: 0 !important;
 }
